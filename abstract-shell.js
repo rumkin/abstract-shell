@@ -85,14 +85,19 @@ Shell.prototype.open = function () {
 
 Shell.prototype.set = function (name, value) {
     if (typeof name === 'object') {
-        Object.getOwnPropertyNames(name).forEach(key => {
-            this.env[key.toUpperCase()] = name[key];
+        Object.getOwnPropertyNames(name)
+        .forEach(key => {
+            this.env[key] = name[key];
         });
     } else {
-        this.env[name.toUpperCase()] = value;
+        this.env[name] = value;
     }
 };
 
 Shell.prototype.get = function (name) {
-    return this.env[name.toUpperCase()];
+    return this.env[name];
+};
+
+Shell.prototype.unset = function(name) {
+    delete this.env[name];
 };
