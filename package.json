@@ -1,0 +1,28 @@
+{
+  "name": "abstract-shell",
+  "version": "1.0.0",
+  "description": "Abstract shell interface",
+  "main": "abstract-shell.js",
+  "scripts": {
+    "test": "mocha test/**.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rumkin/abstract-shell.git"
+  },
+  "keywords": [
+    "shell",
+    "shell",
+    "interface",
+    "interface"
+  ],
+  "author": "rumkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rumkin/abstract-shell/issues"
+  },
+  "homepage": "https://github.com/rumkin/abstract-shell#readme",
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}
